@@ -1,0 +1,1165 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     42549,       1157]
+NotebookOptionsPosition[     40054,       1109]
+NotebookOutlinePosition[     40466,       1125]
+CellTagsIndexPosition[     40423,       1122]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Math 223: Homework 2", "Title",
+ CellChangeTimes->{{3.819477029542458*^9, 3.8194770325147047`*^9}, {
+  3.8847832324747334`*^9, 
+  3.8847832325541487`*^9}},ExpressionUUID->"7a1a2acc-a2fc-41ea-98c7-\
+c4246e4676b3"],
+
+Cell["Hardeep Bassi\t", "Author",
+ CellChangeTimes->{{3.819477041266364*^9, 3.81947704456911*^9}, {
+  3.883922051902199*^9, 
+  3.8839220561190085`*^9}},ExpressionUUID->"531c5300-ad44-4968-9979-\
+7118bf749160"],
+
+Cell["02/10/2023", "Affiliation",
+ CellChangeTimes->{{3.8194774638175488`*^9, 3.819477466618027*^9}, {
+  3.8839220598623633`*^9, 3.8839220620792446`*^9}, {3.8847832387089367`*^9, 
+  3.8847832389821525`*^9}},ExpressionUUID->"71f64e62-0595-42f0-aac2-\
+660cbb4b7757"],
+
+Cell[CellGroupData[{
+
+Cell["Problem 1", "Section",
+ CellChangeTimes->{{3.8194770755713477`*^9, 
+  3.8194770765366144`*^9}},ExpressionUUID->"bcaf365f-c302-41e0-b458-\
+3a5138a8818c"],
+
+Cell[TextData[{
+ "Classify the points at 0 and ",
+ Cell[BoxData[
+  FormBox["\[Infinity]", TraditionalForm]],ExpressionUUID->
+  "6f426e65-cd4d-4b1d-9ecf-661780847117"],
+ " of the following differential equations:"
+}], "Text",
+ CellChangeTimes->{{3.819477124705309*^9, 3.8194771397099257`*^9}, {
+  3.883920038104836*^9, 3.8839200439838867`*^9}, {3.8839202781867285`*^9, 
+  3.883920349180104*^9}, {3.8847833109162765`*^9, 3.8847833162326317`*^9}, {
+  3.884783350886158*^9, 
+  3.884783364722437*^9}},ExpressionUUID->"8bcf3614-aa22-460a-a854-\
+473f9c54f04d"],
+
+Cell[BoxData[
+ FormBox["", TraditionalForm]], "Input",
+ CellChangeTimes->{{3.884783339235201*^9, 
+  3.884783349669155*^9}},ExpressionUUID->"f7c7d0d1-e1be-49b5-9e2e-\
+ebd8126a554a"],
+
+Cell[TextData[{
+ "(a) ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox[
+      StyleBox["x", "TI"], "7"], 
+     FractionBox[
+      RowBox[{
+       SuperscriptBox[
+        StyleBox["d", "TI"], "4"], 
+       StyleBox["y", "TI"]}], 
+      RowBox[{
+       StyleBox["d", "TI"], 
+       SuperscriptBox[
+        StyleBox["x", "TI"], "4"]}]]}], "\[LongEqual]", 
+    FractionBox[
+     StyleBox[
+      RowBox[{"d", "y"}], "TI"], 
+     StyleBox[
+      RowBox[{"d", "x"}], "TI"]]}], TraditionalForm]],ExpressionUUID->
+  "58f860c0-6d5a-4208-9358-3142f8aeaf86"]
+}], "Text",
+ CellChangeTimes->{{3.8847833900345483`*^9, 3.884783393831168*^9}, 
+   3.8847834250486307`*^9},ExpressionUUID->"209b7369-286b-42f0-b3fa-\
+834869348195"],
+
+Cell[TextData[{
+ "Isolating the largest differential yields, ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         FractionBox[
+          RowBox[{
+            SuperscriptBox[
+             StyleBox["d", "TI"], "4"], 
+            StyleBox["y", "TI"]}], 
+          RowBox[{
+            StyleBox["d", "TI"], 
+            SuperscriptBox[
+             StyleBox["x", "TI"], "4"]}]], "-", 
+         FractionBox["1", 
+          SuperscriptBox[
+           StyleBox["x", "TI"], "7"]], 
+         FractionBox[
+          RowBox[{
+            StyleBox["d", "TI"], 
+            StyleBox["y", "TI"]}], 
+          RowBox[{
+            StyleBox["d", "TI"], 
+            StyleBox["x", "TI"]}]], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "\\frac{d^4y}{dx^4} - \\frac{1}{x^7}\\frac{dy}{dx} = 0", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "b76942de-39f9-4710-90d7-a017b6dd8e5c"],
+ ".  This means  ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "57a02be8-d67d-4566-9e1d-1f980921ab16"],
+ " is an irregular singular point as ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         SuperscriptBox[
+          StyleBox["x", "TI"], "3"], "*", 
+         FractionBox["1", 
+          SuperscriptBox[
+           StyleBox["x", "TI"], "7"]], "\[LongEqual]", 
+         FractionBox["1", 
+          SuperscriptBox[
+           StyleBox["x", "TI"], "4"]]}], TraditionalForm], "errors" -> {}, 
+     "input" -> "x^3 * \\frac{1}{x^7} = \\frac{1}{x^4}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "b80e2d8b-90cd-4a38-b1a3-17367aa5e1d8"],
+ " is not analytic at ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "7b1ec807-30ae-47c1-80e5-b298fd7b5ad1"],
+ ", meaning that the point is not ordinary or a regular singular point. ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       FractionBox["1", 
+        SuperscriptBox[
+         StyleBox["x", "TI"], "7"]], TraditionalForm], "errors" -> {}, 
+     "input" -> "\\frac{1}{x^7}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "13cf000d-7a4c-424c-8fe7-4cb46b193df6"],
+ " is however analytic at ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "\[Infinity]"}], 
+       TraditionalForm], "errors" -> {}, "input" -> "x = \\infty", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "fc221747-49fc-4023-bf88-8a7b71ab4c9d"],
+ ", hence we have that it is an ordinary point."
+}], "Text",
+ CellChangeTimes->{{3.884787586553906*^9, 3.884787610467296*^9}, 
+   3.884801083413853*^9, {3.8848011350985155`*^9, 3.8848012627052584`*^9}, {
+   3.8848014221308413`*^9, 
+   3.8848014443887076`*^9}},ExpressionUUID->"03d994fa-54a8-4d83-a244-\
+da214ceba718"],
+
+Cell[TextData[{
+ "(b) ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         SuperscriptBox[
+          StyleBox["x", "TI"], "3"], 
+         FractionBox[
+          RowBox[{
+            SuperscriptBox[
+             StyleBox["d", "TI"], "3"], 
+            StyleBox["y", "TI"]}], 
+          RowBox[{
+            StyleBox["d", "TI"], 
+            SuperscriptBox[
+             StyleBox["x", "TI"], "3"]}]], "\[LongEqual]", 
+         StyleBox["y", "TI"]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "x^3\\frac{d^3y}{dx^3} = y", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "7840b358-7181-4d6a-84bc-c1d11c155c53"],
+ "\nIsolating the largest differential yields, ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         FractionBox[
+          RowBox[{
+            SuperscriptBox[
+             StyleBox["d", "TI"], "3"], 
+            StyleBox["y", "TI"]}], 
+          RowBox[{
+            StyleBox["d", "TI"], 
+            SuperscriptBox[
+             StyleBox["x", "TI"], "3"]}]], "-", 
+         FractionBox["1", 
+          SuperscriptBox[
+           StyleBox["x", "TI"], "3"]], 
+         StyleBox["y", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "\\frac{d^3y}{dx^3} - \\frac{1}{x^3}y = 0", 
+     "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "3a14c8d3-8cf6-4448-a1ba-2fb853141d45"],
+ ". This means that ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "a52124a4-72d3-429a-a743-3a871f39cc70"],
+ ", is a regular singular point since we see that ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         SuperscriptBox[
+          StyleBox["x", "TI"], "3"], "*", 
+         FractionBox["1", 
+          SuperscriptBox[
+           StyleBox["x", "TI"], "3"]], "\[LongEqual]", "1"}], 
+       TraditionalForm], "errors" -> {}, "input" -> 
+     "x^3 * \\frac{1}{x^3} = 1", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "f4f690f2-a838-49fb-8980-2353dae6f5a4"],
+ " is analytic at ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "fddea2dc-78a7-49c3-abfe-acc0d9089099"],
+ ". Since ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       FractionBox["1", 
+        SuperscriptBox[
+         StyleBox["x", "TI"], "3"]], TraditionalForm], "errors" -> {}, 
+     "input" -> "\\frac{1}{x^3}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "b9938fdf-8c7f-45b5-b5da-ec11da58991a"],
+ " is analytic at ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "\[Infinity]"}], 
+       TraditionalForm], "errors" -> {}, "input" -> "x = \\infty", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "75ab0696-ed02-4e8a-9841-bf54a308f49f"],
+ ", we see that this point is an ordinary point.\n\n(c) ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         FractionBox[
+          RowBox[{
+            SuperscriptBox[
+             StyleBox["d", "TI"], "3"], 
+            StyleBox["y", "TI"]}], 
+          RowBox[{
+            StyleBox["d", "TI"], 
+            SuperscriptBox[
+             StyleBox["x", "TI"], "3"]}]], "\[LongEqual]", 
+         SuperscriptBox[
+          StyleBox["x", "TI"], "3"], 
+         StyleBox["y", "TI"]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "\\frac{d^3y}{dx^3} = x^3y", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "46cce7f3-a805-4661-b393-24ada1971e60"],
+ "\nSince the largest differential is already isolated, we see that  ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "78eaed56-76f8-45c2-9e6d-fbf3e77dfdaa"],
+ ", is an ordinary point since ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       SuperscriptBox[
+        StyleBox["x", "TI"], "3"], TraditionalForm], "errors" -> {}, "input" -> 
+     "x^3", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "90ba2065-50ee-4c07-9ef7-9b0ee763f5a1"],
+ " is analytic at ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "5afbf6f3-59bf-46f3-a573-f8bdb733adfa"],
+ ".  ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "\[Infinity]"}], 
+       TraditionalForm], "errors" -> {}, "input" -> "x = \\infty", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "f7fd8b46-2fc9-47f4-bad4-73fcbf506d77"],
+ " is an irregular singular point since ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       SuperscriptBox[
+        StyleBox["x", "TI"], "3"], TraditionalForm], "errors" -> {}, "input" -> 
+     "x^3", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "06f56f5a-a7d8-4be6-a0be-ade8bb3daff6"],
+ " is entire for all finite points, which means ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "\[Infinity]"}], 
+       TraditionalForm], "errors" -> {}, "input" -> "x = \\infty", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "84a2b5e9-b87e-4538-9a46-571580c17cc0"],
+ " is neither regular or ordinary.\n\n(d) ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         SuperscriptBox[
+          StyleBox["x", "TI"], "2"], 
+         FractionBox[
+          RowBox[{
+            SuperscriptBox[
+             StyleBox["d", "TI"], "2"], 
+            StyleBox["y", "TI"]}], 
+          RowBox[{
+            StyleBox["d", "TI"], 
+            SuperscriptBox[
+             StyleBox["x", "TI"], "2"]}]], "\[LongEqual]", 
+         SuperscriptBox[
+          StyleBox["e", "TI"], 
+          FractionBox["1", 
+           StyleBox["x", "TI"]]], 
+         StyleBox["y", "TI"]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "x^2\\frac{d^2y}{dx^2} = e^{\\frac{1}{x}}y", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "2bd8d50f-e7d9-4a2b-ba5a-32d45f4dda05"],
+ "\nIsolating the largest differential yields, ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         FractionBox[
+          RowBox[{
+            SuperscriptBox[
+             StyleBox["d", "TI"], "2"], 
+            StyleBox["y", "TI"]}], 
+          RowBox[{
+            StyleBox["d", "TI"], 
+            SuperscriptBox[
+             StyleBox["x", "TI"], "2"]}]], "-", 
+         FractionBox[
+          SuperscriptBox[
+           StyleBox["e", "TI"], 
+           FractionBox["1", 
+            StyleBox["x", "TI"]]], 
+          SuperscriptBox[
+           StyleBox["x", "TI"], "2"]], 
+         StyleBox["y", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "\\frac{d^2y}{dx^2} - \\frac{e^{\\frac{1}{x}}}{x^2}y = 0", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "e007d367-d6f6-4944-a0d6-1b2adb3e610a"],
+ ". This means that ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "16201edb-574c-493f-8254-efb8b1fb1f7f"],
+ " is an irregular singular point since ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       SuperscriptBox[
+        StyleBox["e", "TI"], 
+        FractionBox["1", 
+         StyleBox["x", "TI"]]], TraditionalForm], "errors" -> {}, "input" -> 
+     "e^{\\frac{1}{x}}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "6503d2ba-d43c-4e17-ba68-2de304b09b6f"],
+ " is not analytic at ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "eeab605e-c63b-495b-9dc4-5ee987e7febd"],
+ ". By taking ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", 
+         FractionBox["1", 
+          StyleBox["t", "TI"]]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "x = \\frac{1}{t}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "5f97ff8f-f75d-4e03-bb58-10b5b22d0105"],
+ ", we see that the ODE turns into:\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         FractionBox[
+          RowBox[{
+            SuperscriptBox[
+             StyleBox["d", "TI"], "2"], 
+            StyleBox["y", "TI"]}], 
+          RowBox[{
+            StyleBox["d", "TI"], 
+            SuperscriptBox[
+             StyleBox["t", "TI"], "2"]}]], "+", 
+         FractionBox["2", 
+          StyleBox["t", "TI"]], 
+         FractionBox[
+          RowBox[{
+            StyleBox["d", "TI"], 
+            StyleBox["y", "TI"]}], 
+          RowBox[{
+            StyleBox["d", "TI"], 
+            StyleBox["t", "TI"]}]], "-", 
+         FractionBox[
+          SuperscriptBox[
+           StyleBox["e", "TI"], 
+           StyleBox["t", "TI"]], 
+          StyleBox["t", "TI"]], 
+         StyleBox["y", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "\\frac{d^2y}{dt^2} + \\frac{2}{t}\\frac{dy}{dt} - \\frac{e^t}{t}y = 0", 
+     "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "ef1298ed-5bd7-4ed2-a888-e68d1a5757a6"],
+ ". This means at ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["t", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "t = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "1de53f31-baed-479d-9274-e00ca83adaa5"],
+ ", we have that ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "\[Infinity]"}], 
+       TraditionalForm], "errors" -> {}, "input" -> "x = \\infty", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "5fc9e1a4-2d99-47e6-b5e2-278659665d87"],
+ " is a regular singular point due to multiplication by ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       StyleBox["t", "TI"], TraditionalForm], "errors" -> {}, "input" -> "t", 
+     "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "19125b16-a8c6-4cbb-b9f5-c46a35cb42c8"],
+ " on the first derivative and ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       SuperscriptBox[
+        StyleBox["t", "TI"], "2"], TraditionalForm], "errors" -> {}, "input" -> 
+     "t^2", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "e291bd0a-9eb2-49f5-a8be-6d07ca936bab"],
+ " on the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    TemplateBox[<|"boxes" -> FormBox[
+        StyleBox["y", "TI"], TraditionalForm], "errors" -> {}, "input" -> "y",
+       "state" -> "Boxes"|>,
+     "TeXAssistantTemplate"], " "}], TraditionalForm]],ExpressionUUID->
+  "66e5a5f0-70dc-4cfb-85e7-f7501a9ab1b0"],
+ "term yield analytic functions at ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["t", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "t = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "fcd6940b-7e1f-451f-ac2c-cf1d65a64165"],
+ ".\n\n(e) ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"tan(x)", 
+         FractionBox[
+          RowBox[{
+            StyleBox["d", "TI"], 
+            StyleBox["y", "TI"]}], 
+          RowBox[{
+            StyleBox["d", "TI"], 
+            StyleBox["x", "TI"]}]], "\[LongEqual]", 
+         StyleBox["y", "TI"]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "\\text{tan(x)}\\frac{dy}{dx} = y", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "09c673f0-550a-4b3c-9f03-90c3a2ebdabc"],
+ "\nIsolating the largest differential yields, ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         FractionBox[
+          RowBox[{
+            StyleBox["d", "TI"], 
+            StyleBox["y", "TI"]}], 
+          RowBox[{
+            StyleBox["d", "TI"], 
+            StyleBox["x", "TI"]}]], "-", 
+         FractionBox["1", "tan(x)"], 
+         StyleBox["y", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "\\frac{dy}{dx} - \\frac{1}{\\text{tan(x)}}y = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "9bb67342-8ef6-42df-966e-9b7966319b21"],
+ ". Using the Series command, we see that we can expand ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       FractionBox["1", "tan(x)"], TraditionalForm], "errors" -> {}, "input" -> 
+     "\\frac{1}{\\text{tan(x)}}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "3eec6a92-27d8-424c-a326-15a988c81542"],
+ " as:",
+ Cell[BoxData[""], "Input",
+  CellChangeTimes->{{3.884783339235201*^9, 3.884783349669155*^9}},
+  ExpressionUUID->"d0a0a198-5fdf-4cdf-bd04-4373b2d313ae"]
+}], "Text",
+ CellChangeTimes->{{3.8839199588668065`*^9, 3.883919994557186*^9}, {
+   3.8839201189338408`*^9, 3.8839201240013075`*^9}, {3.883920224409845*^9, 
+   3.883920224542147*^9}, 3.88478337084816*^9, 3.884800996265726*^9, {
+   3.8848012832227716`*^9, 3.884801289417626*^9}, {3.884801365323167*^9, 
+   3.88480141255774*^9}, {3.8848014499904823`*^9, 3.884801582913746*^9}, {
+   3.8848016664263425`*^9, 3.884801776223688*^9}, {3.884801843410882*^9, 
+   3.8848018501149664`*^9}, {3.8848019075888777`*^9, 
+   3.8848020293441477`*^9}, {3.8848020876178026`*^9, 
+   3.8848021892387695`*^9}, {3.8848022360599613`*^9, 3.884802248020875*^9}, {
+   3.88480229350881*^9, 3.8848025810538692`*^9}, {3.884803004200793*^9, 
+   3.8848030056113253`*^9}},ExpressionUUID->"e60820c2-52c9-4360-84b0-\
+fb134e4cb2df"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Series", "[", 
+  RowBox[{
+   RowBox[{"1", "/", 
+    RowBox[{"Tan", "[", "x", "]"}]}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "6"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8848025955257716`*^9, 3.884802615027671*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"02632bf6-2e7a-44bb-9af0-031c1475b351"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   FractionBox["1", "x"], "-", 
+   FractionBox["x", "3"], "-", 
+   FractionBox[
+    SuperscriptBox["x", "3"], "45"], "-", 
+   FractionBox[
+    RowBox[{"2", " ", 
+     SuperscriptBox["x", "5"]}], "945"], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", "x", "]"}], "7"],
+    SeriesData[$CellContext`x, 0, {}, -1, 7, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`x, 0, {1, 0, 
+    Rational[-1, 3], 0, 
+    Rational[-1, 45], 0, 
+    Rational[-2, 945]}, -1, 7, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8848026153448453`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"d59a6054-1ae9-45a0-b012-dcfa3013e841"]
+}, Open  ]],
+
+Cell[TextData[{
+ "We see here that multiplication by ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       StyleBox["x", "TI"], TraditionalForm], "errors" -> {}, "input" -> "x", 
+     "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "0d37d90c-dba6-4cec-a6b8-ca79508e2bc7"],
+ " is sufficient enough to eliminate the singularity at ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x  =  0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "2bf1ca01-076c-42b8-b992-b27e5214e89d"],
+ " caused by the ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       FractionBox["1", 
+        StyleBox["x", "TI"]], TraditionalForm], "errors" -> {}, "input" -> 
+     "\\frac{1}{x}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "a7b4037d-f48b-4775-ac63-a0b5ace51091"],
+ " term, hence ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x  = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "0898b0f5-75a7-49df-9dbd-f7df9fd7f3f7"],
+ " is a regular singular point. By taking ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", 
+         FractionBox["1", 
+          StyleBox["t", "TI"]]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "x = \\frac{1}{t}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "37f8ef8f-e1d2-4627-8921-663618d76a5b"],
+ ", the ODE turns into:\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         FractionBox[
+          RowBox[{
+            StyleBox["d", "TI"], 
+            StyleBox["y", "TI"]}], 
+          RowBox[{
+            StyleBox["d", "TI"], 
+            StyleBox["t", "TI"]}]], "+", 
+         FractionBox["1", 
+          RowBox[{
+            SuperscriptBox[
+             StyleBox["t", "TI"], "2"], "tan", 
+            RowBox[{"(", 
+              FractionBox["1", 
+               StyleBox["t", "TI"]], ")"}]}]], 
+         StyleBox["y", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "\\frac{dy}{dt} + \\frac{1}{t^2\\text{tan}(\\frac{1}{t})}y = 0", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "4e1b830d-0a4a-4fb6-a47f-65ac5b326cb6"],
+ ". Since there is a  ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"tan", "(", 
+         FractionBox["1", 
+          StyleBox["t", "TI"]], ")"}], TraditionalForm], "errors" -> {}, 
+     "input" -> "\\text{tan}(\\frac{1}{t})", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "ded7a959-6fe1-4e4e-a34d-3f8b36417391"],
+ " term, we see that at ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["t", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "t = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "e5a52b6d-b2f9-4894-a907-984728a3128a"],
+ ", our expression is not analytic, hence ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "\[Infinity]"}], 
+       TraditionalForm], "errors" -> {}, "input" -> "x  = \\infty", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "69bc0092-cf8b-409d-a87f-b18f87849099"],
+ " is an irregular singular point.\n\n(f) ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         FractionBox[
+          RowBox[{
+            SuperscriptBox[
+             StyleBox["d", "TI"], "2"], 
+            StyleBox["y", "TI"]}], 
+          RowBox[{
+            StyleBox["d", "TI"], 
+            SuperscriptBox[
+             StyleBox["x", "TI"], "2"]}]], "\[LongEqual]", "log", 
+         RowBox[{"(", 
+           StyleBox["x", "TI"], ")"}], 
+         StyleBox["y", "TI"]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "\\frac{d^2y}{dx^2} = \\text{log}(x)y", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "7eecf377-cd18-433a-8f72-2dca1f2cb367"],
+ "\nSince the largest differential is already isolated, ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "40897b93-b9aa-4e0f-9ebc-296069dc8fda"],
+ " is an irregular point since ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"log", "(", 
+         StyleBox["x", "TI"], ")"}], TraditionalForm], "errors" -> {}, 
+     "input" -> "\\text{log}(x)", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "43811726-5814-4999-bce7-08ecb2a92a4c"],
+ " is not analytic at the point. This means ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "6c125fff-46ab-450d-9937-91a827508c16"],
+ " is neither a regular singular point or an ordinary point, hence it is an \
+irregular singular point. By taking ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", 
+         FractionBox["1", 
+          StyleBox["t", "TI"]]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "x = \\frac{1}{t}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "c32f361c-3502-4b41-8888-7a22b4ee709b"],
+ ", the ODE turns into:\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         FractionBox[
+          RowBox[{
+            SuperscriptBox[
+             StyleBox["d", "TI"], "2"], 
+            StyleBox["y", "TI"]}], 
+          RowBox[{
+            StyleBox["d", "TI"], 
+            SuperscriptBox[
+             StyleBox["t", "TI"], "2"]}]], "+", 
+         FractionBox["2", 
+          StyleBox["t", "TI"]], 
+         FractionBox[
+          RowBox[{
+            StyleBox["d", "TI"], 
+            StyleBox["y", "TI"]}], 
+          RowBox[{
+            StyleBox["d", "TI"], 
+            StyleBox["t", "TI"]}]], "+", 
+         FractionBox[
+          RowBox[{"log", "(", 
+            StyleBox["t", "TI"], ")"}], 
+          SuperscriptBox[
+           StyleBox["t", "TI"], "4"]], 
+         StyleBox["y", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "\\frac{d^2y}{dt^2} + \\frac{2}{t}\\frac{dy}{dt} + \
+\\frac{\\text{log}(t)}{t^4}y =0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "0c7ed5c9-af38-414b-8925-6206a98c4ced"],
+ ". Since we are evaluating at ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["t", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "t = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "79e54010-3cd8-410f-98a4-4c234f8e8872"],
+ ", we see that ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"log", "(", 
+         StyleBox["t", "TI"], ")"}], TraditionalForm], "errors" -> {}, 
+     "input" -> "\\text{log}(t)", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "92fee71c-05ba-4145-92e7-d402fae827ca"],
+ " not being analytic there yields ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "\[Infinity]"}], 
+       TraditionalForm], "errors" -> {}, "input" -> "x  = \\infty", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "31409dfb-5378-45f4-8cb0-f3a6196b9d2f"],
+ " to be an irregular singular point."
+}], "Text",
+ CellChangeTimes->{{3.8848026251757765`*^9, 3.8848026941457872`*^9}, {
+  3.8848027669897633`*^9, 3.884802773903743*^9}, {3.8848028968789825`*^9, 
+  3.8848028975280046`*^9}, {3.8848029397668114`*^9, 3.884803051241795*^9}, {
+  3.8848030818248615`*^9, 3.8848032134708047`*^9}, {3.8848033302428083`*^9, 
+  3.8848033692988057`*^9}},ExpressionUUID->"27fb00e9-7fa0-4a47-9090-\
+793618e6031f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 2", "Section",
+ CellChangeTimes->{{3.819477185401244*^9, 
+  3.8194771863519216`*^9}},ExpressionUUID->"9f016f3c-33ec-4bf1-9cd7-\
+94d28c66506e"],
+
+Cell[TextData[{
+ "For the IVP, ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         RowBox[{"(", 
+           RowBox[{
+             StyleBox["x", "TI"], "-", "1"}], ")"}], 
+         RowBox[{"(", 
+           RowBox[{
+             StyleBox["x", "TI"], "-", "2"}], ")"}], 
+         SuperscriptBox[
+          StyleBox["y", "TI"], "\[Prime]\[Prime]"], "+", 
+         RowBox[{"(", 
+           RowBox[{"4", 
+             StyleBox["x", "TI"], "-", "6"}], ")"}], 
+         SuperscriptBox[
+          StyleBox["y", "TI"], "\[Prime]"], "+", "2", 
+         StyleBox["y", "TI"], "\[LongEqual]", "0", ",", 
+         StyleBox["y", "TI"], 
+         RowBox[{"(", "0", ")"}], "\[LongEqual]", "2", ",", 
+         SuperscriptBox[
+          StyleBox["y", "TI"], "\[Prime]"], 
+         RowBox[{"(", "0", ")"}], "\[LongEqual]", "1"}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "(x-1)(x-2)y'' + (4x-6)y' + 2y =0, y(0) = 2, y'(0) = 1", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "e6c50560-8a37-4558-9169-6bdfb0217c54"],
+ ", where might one expect the series solution about ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "49d0499f-8419-4bc0-8a25-439875751fad"],
+ " to converge? Compute the Taylor expansion about ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "b451b95a-f2b3-4cbf-a92d-a006a14054a0"],
+ " of the solution and determine the radius of convergence."
+}], "Text",
+ CellChangeTimes->{{3.8194771895995965`*^9, 3.8194771998661075`*^9}, 
+   3.8839211801702766`*^9, 3.883921425865695*^9, {3.883921508062216*^9, 
+   3.8839215176252055`*^9}, {3.8844398383637123`*^9, 
+   3.8844398626888757`*^9}, {3.884439901620618*^9, 3.8844399229830904`*^9}, {
+   3.8844399842616625`*^9, 3.8844400461923933`*^9}, {3.8848033958069468`*^9, 
+   3.8848033993808694`*^9}, {3.8848034374026604`*^9, 
+   3.8848034946594515`*^9}},ExpressionUUID->"0cb614cd-b2fd-43bb-adda-\
+f4e4d48900e5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"soln", " ", "=", " ", 
+  RowBox[{"DSolve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"x", "-", "1"}], ")"}], "*", 
+         RowBox[{"(", 
+          RowBox[{"x", "-", "2"}], ")"}], 
+         RowBox[{
+          RowBox[{"y", "''"}], "[", "x", "]"}]}], " ", "+", " ", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"4", "*", "x"}], "-", "6"}], ")"}], 
+         RowBox[{
+          RowBox[{"y", "'"}], "[", "x", "]"}]}], " ", "+", " ", 
+        RowBox[{"2", "*", 
+         RowBox[{"y", "[", "x", "]"}]}]}], " ", "==", " ", "0"}], ",", " ", 
+      RowBox[{
+       RowBox[{"y", "[", "0", "]"}], " ", "==", "2"}], ",", " ", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"y", "'"}], "[", "0", "]"}], " ", "==", " ", "1"}]}], "}"}], 
+    ",", " ", 
+    RowBox[{"y", "[", "x", "]"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "0", ",", "1"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.884803502967224*^9, 3.8848035072318125`*^9}, {
+  3.8848037295068903`*^9, 3.884803819666458*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"7244d31a-c139-4cda-9847-97bf04e24db7"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"y", "[", "x", "]"}], "\[Rule]", 
+    RowBox[{"-", 
+     FractionBox["4", 
+      RowBox[{
+       RowBox[{"-", "2"}], "+", "x"}]]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.884803821683439*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"7d25bcbb-bf2a-4e91-89c7-455081dcdbaf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Series", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", "4"}], "/", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "2"}], "+", "x"}], ")"}]}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "8"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.884803827645821*^9, 3.8848038805040903`*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"23b84fd7-1495-4fe9-a63e-ca8f15cf5870"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"2", "+", "x", "+", 
+   FractionBox[
+    SuperscriptBox["x", "2"], "2"], "+", 
+   FractionBox[
+    SuperscriptBox["x", "3"], "4"], "+", 
+   FractionBox[
+    SuperscriptBox["x", "4"], "8"], "+", 
+   FractionBox[
+    SuperscriptBox["x", "5"], "16"], "+", 
+   FractionBox[
+    SuperscriptBox["x", "6"], "32"], "+", 
+   FractionBox[
+    SuperscriptBox["x", "7"], "64"], "+", 
+   FractionBox[
+    SuperscriptBox["x", "8"], "128"], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", "x", "]"}], "9"],
+    SeriesData[$CellContext`x, 0, {}, 0, 9, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`x, 0, {2, 1, 
+    Rational[1, 2], 
+    Rational[1, 4], 
+    Rational[1, 8], 
+    Rational[1, 16], 
+    Rational[1, 32], 
+    Rational[1, 64], 
+    Rational[1, 128]}, 0, 9, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{{3.884803848710437*^9, 3.884803880846261*^9}},
+ CellLabel->"Out[5]=",ExpressionUUID->"9bbc69c2-1564-481e-8e92-4b06e533c03c"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Here, we see that the ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       SubscriptBox[
+        StyleBox["a", "TI"], 
+        StyleBox["n", "TI"]], TraditionalForm], "errors" -> {}, "input" -> 
+     "a_n", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "a8cb30ba-931f-402f-97a9-ad926298b500"],
+ " coefficients follow the pattern ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       FractionBox["1", 
+        SuperscriptBox["2", 
+         RowBox[{
+           StyleBox["n", "TI"], "-", "1"}]]], TraditionalForm], 
+     "errors" -> {}, "input" -> "\\frac{1}{2^{n-1}}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "5d42f488-ca00-48ee-a0a3-f6c29504c17b"],
+ ", hence our radius of convergence is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    TemplateBox[<|"boxes" -> FormBox[
+        RowBox[{
+          StyleBox["R", "TI"], "\[LongEqual]", "2"}], TraditionalForm], 
+      "errors" -> {}, "input" -> "R = 2", "state" -> "Boxes"|>,
+     "TeXAssistantTemplate"], "."}], TraditionalForm]],ExpressionUUID->
+  "e2e4b650-a613-4d01-8375-f2426d7e648d"]
+}], "Text",
+ CellChangeTimes->{{3.8848038899240885`*^9, 3.8848039046151347`*^9}, {
+  3.8848039612036576`*^9, 
+  3.8848040093029537`*^9}},ExpressionUUID->"e6f46f5a-7daa-4f3d-9360-\
+9161ae395dab"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 3", "Section",
+ CellChangeTimes->{{3.8194772128885565`*^9, 
+  3.819477213817498*^9}},ExpressionUUID->"d6974c6b-8b0f-48e8-9114-\
+3b450eff0ad6"],
+
+Cell[TextData[{
+ "For the following differential equations, where would you expect the series \
+solution about ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "936fa4f5-cf77-4cea-984c-96adbedc7f6c"],
+ " to converge? Find series expansions of all the solutions to the following \
+differential equations about ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x =0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "7d415b3b-7c55-4af3-a96e-f14ddeba1bca"],
+ ". Try to sum in closed form any infinite series that appear."
+}], "Text",
+ CellChangeTimes->{{3.819477217465713*^9, 3.8194772281844006`*^9}, {
+  3.8844396887482567`*^9, 3.884439725136343*^9}, {3.8844400685911074`*^9, 
+  3.88444019039398*^9}, {3.88480402641895*^9, 
+  3.8848040825200005`*^9}},ExpressionUUID->"3fff187e-6475-466e-9839-\
+79ff2b20f696"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{760.5, 833.25},
+WindowMargins->{{502.5, Automatic}, {49.5, Automatic}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (November 18, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"67b427ec-86ff-424b-b352-96fc254d7be1"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 218, 4, 98, "Title",ExpressionUUID->"7a1a2acc-a2fc-41ea-98c7-c4246e4676b3"],
+Cell[801, 28, 209, 4, 31, "Author",ExpressionUUID->"531c5300-ad44-4968-9979-7118bf749160"],
+Cell[1013, 34, 264, 4, 31, "Affiliation",ExpressionUUID->"71f64e62-0595-42f0-aac2-660cbb4b7757"],
+Cell[CellGroupData[{
+Cell[1302, 42, 158, 3, 67, "Section",ExpressionUUID->"bcaf365f-c302-41e0-b458-3a5138a8818c"],
+Cell[1463, 47, 553, 12, 35, "Text",ExpressionUUID->"8bcf3614-aa22-460a-a854-473f9c54f04d"],
+Cell[2019, 61, 180, 4, 27, "Input",ExpressionUUID->"f7c7d0d1-e1be-49b5-9e2e-ebd8126a554a"],
+Cell[2202, 67, 736, 26, 43, "Text",ExpressionUUID->"209b7369-286b-42f0-b3fa-834869348195"],
+Cell[2941, 95, 3395, 90, 141, "Text",ExpressionUUID->"03d994fa-54a8-4d83-a244-da214ceba718"],
+Cell[6339, 187, 15344, 408, 690, "Text",ExpressionUUID->"e60820c2-52c9-4360-84b0-fb134e4cb2df"],
+Cell[CellGroupData[{
+Cell[21708, 599, 348, 8, 28, "Input",ExpressionUUID->"02632bf6-2e7a-44bb-9af0-031c1475b351"],
+Cell[22059, 609, 688, 21, 50, "Output",ExpressionUUID->"d59a6054-1ae9-45a0-b012-dcfa3013e841"]
+}, Open  ]],
+Cell[22762, 633, 8800, 229, 380, "Text",ExpressionUUID->"27fb00e9-7fa0-4a47-9090-793618e6031f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31599, 867, 156, 3, 67, "Section",ExpressionUUID->"9f016f3c-33ec-4bf1-9cd7-94d28c66506e"],
+Cell[31758, 872, 2414, 57, 85, "Text",ExpressionUUID->"0cb614cd-b2fd-43bb-adda-f4e4d48900e5"],
+Cell[CellGroupData[{
+Cell[34197, 933, 1220, 34, 48, "Input",ExpressionUUID->"7244d31a-c139-4cda-9847-97bf04e24db7"],
+Cell[35420, 969, 347, 10, 48, "Output",ExpressionUUID->"7d25bcbb-bf2a-4e91-89c7-455081dcdbaf"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35804, 984, 409, 11, 28, "Input",ExpressionUUID->"23b84fd7-1495-4fe9-a63e-ca8f15cf5870"],
+Cell[36216, 997, 1007, 32, 50, "Output",ExpressionUUID->"9bbc69c2-1564-481e-8e92-4b06e533c03c"]
+}, Open  ]],
+Cell[37238, 1032, 1375, 36, 53, "Text",ExpressionUUID->"e6f46f5a-7daa-4f3d-9360-9161ae395dab"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38650, 1073, 156, 3, 67, "Section",ExpressionUUID->"d6974c6b-8b0f-48e8-9114-3b450eff0ad6"],
+Cell[38809, 1078, 1217, 27, 87, "Text",ExpressionUUID->"3fff187e-6475-466e-9839-79ff2b20f696"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
