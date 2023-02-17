@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     55950,       1541]
-NotebookOptionsPosition[     52455,       1477]
-NotebookOutlinePosition[     52897,       1494]
-CellTagsIndexPosition[     52854,       1491]
+NotebookDataLength[     56005,       1542]
+NotebookOptionsPosition[     52510,       1478]
+NotebookOutlinePosition[     52952,       1495]
+CellTagsIndexPosition[     52909,       1492]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1339,10 +1339,11 @@ Cell[BoxData[""], "Input",
 
 Cell["\<\
 (b) By Fuchs\[CloseCurlyQuote] Theorem, we see that the radius of convergence \
-at x = 0 is 0 since due to the singularity at x = 0.\
+at x = 0 is infinite due to no singularities in the ODE.\
 \>", "Text",
- CellChangeTimes->{{3.884963688919282*^9, 
-  3.884963713609969*^9}},ExpressionUUID->"4250f49e-37ac-44e5-96e2-\
+ CellChangeTimes->{{3.884963688919282*^9, 3.884963713609969*^9}, {
+  3.884989090063139*^9, 
+  3.8849891055550833`*^9}},ExpressionUUID->"4250f49e-37ac-44e5-96e2-\
 5d3539ea480c"],
 
 Cell[CellGroupData[{
@@ -1478,7 +1479,7 @@ Cell[BoxData[
 WindowSize->{760.5, 833.25},
 WindowMargins->{{502.5, Automatic}, {49.5, Automatic}},
 Magnification:>0.9 Inherited,
-FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (November 27, 2022)",
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (November 18, 2022)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"67b427ec-86ff-424b-b352-96fc254d7be1"
 ]
@@ -1531,15 +1532,15 @@ Cell[46061, 1273, 718, 16, 26, "Input",ExpressionUUID->"b39efeb6-a59d-49de-9849-
 Cell[46782, 1291, 1270, 40, 91, "Output",ExpressionUUID->"da214c66-1908-470c-a384-61f5b06ade7c"]
 }, Open  ]],
 Cell[48067, 1334, 179, 3, 25, "Input",ExpressionUUID->"c018ddff-012c-49dd-954e-618558f6da6c"],
-Cell[48249, 1339, 282, 6, 31, "Text",ExpressionUUID->"4250f49e-37ac-44e5-96e2-5d3539ea480c"],
+Cell[48249, 1339, 337, 7, 31, "Text",ExpressionUUID->"4250f49e-37ac-44e5-96e2-5d3539ea480c"],
 Cell[CellGroupData[{
-Cell[48556, 1349, 658, 18, 26, "Input",ExpressionUUID->"c4bc3329-0e47-4e6b-9930-0a53d761a055"],
-Cell[49217, 1369, 1110, 36, 44, "Output",ExpressionUUID->"7c7dc22f-e53e-4bfc-b9d8-fbdcf6be439c"]
+Cell[48611, 1350, 658, 18, 26, "Input",ExpressionUUID->"c4bc3329-0e47-4e6b-9930-0a53d761a055"],
+Cell[49272, 1370, 1110, 36, 44, "Output",ExpressionUUID->"7c7dc22f-e53e-4bfc-b9d8-fbdcf6be439c"]
 }, Open  ]],
-Cell[50342, 1408, 284, 6, 31, "Text",ExpressionUUID->"cd93cc70-cc11-4635-8cc0-c42ef7f730c9"],
+Cell[50397, 1409, 284, 6, 31, "Text",ExpressionUUID->"cd93cc70-cc11-4635-8cc0-c42ef7f730c9"],
 Cell[CellGroupData[{
-Cell[50651, 1418, 918, 24, 26, "Input",ExpressionUUID->"a3942664-571b-4f90-92be-89bd61e41c36"],
-Cell[51572, 1444, 843, 28, 50, "Output",ExpressionUUID->"5821493d-c444-4738-b4c6-05aca2025ad8"]
+Cell[50706, 1419, 918, 24, 26, "Input",ExpressionUUID->"a3942664-571b-4f90-92be-89bd61e41c36"],
+Cell[51627, 1445, 843, 28, 50, "Output",ExpressionUUID->"5821493d-c444-4738-b4c6-05aca2025ad8"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
