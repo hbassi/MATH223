@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    138595,       2660]
-NotebookOptionsPosition[    136887,       2623]
-NotebookOutlinePosition[    137325,       2640]
-CellTagsIndexPosition[    137282,       2637]
+NotebookDataLength[    140256,       2700]
+NotebookOptionsPosition[    138451,       2662]
+NotebookOutlinePosition[    138889,       2679]
+CellTagsIndexPosition[    138846,       2676]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2602,7 +2602,46 @@ btxM
    3.8878096037054048`*^9, 3.887809607768379*^9}, {3.8878096448223886`*^9, 
    3.8878096632238955`*^9}, 3.8878097060835114`*^9},
  CellLabel->"Out[24]=",ExpressionUUID->"2be7c098-6d87-444a-abbb-6d9a88b058fd"]
-}, Open  ]]
+}, Open  ]],
+
+Cell[TextData[{
+ "These approximations make sense as part (a) was for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    TemplateBox[<|"boxes" -> FormBox[
+        RowBox[{
+          StyleBox["x", "TI"], "\[Rule]", 
+          SuperscriptBox["0", "+"]}], TraditionalForm], "errors" -> {}, 
+      "input" -> "x \\to 0^+", "state" -> "Boxes"|>,
+     "TeXAssistantTemplate"], ","}], TraditionalForm]],ExpressionUUID->
+  "e1944e30-00c9-47ea-b2bb-ab0a91e7b50c"],
+ " hence we expect the exact computed by Mathematica and approximate computed \
+by integration by parts to align as we go to 0. For (b), we see our \
+approximation was for ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[Rule]", "\[Infinity]"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x \\to \\infty", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "5bc74768-3382-4fc1-8eb9-38a76fda2679"],
+ ", so we see that the Mathematica exact and the approximate computed by \
+integration by parts aligns better as we take ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[Rule]", "\[Infinity]"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x \\to \\infty", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "c40df5db-3423-4f76-b768-ffb6d4c761fe"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.887811131542105*^9, 
+  3.887811236944414*^9}},ExpressionUUID->"fedaa6ba-e639-4cef-9573-\
+46fcfd022f60"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2645,7 +2684,7 @@ Cell[773, 27, 209, 4, 25, "Author",ExpressionUUID->"47fdc244-5ee2-4b42-93c3-40f6
 Cell[985, 33, 212, 4, 25, "Affiliation",ExpressionUUID->"581392a7-3011-4211-898e-5aefcdf8effb"],
 Cell[CellGroupData[{
 Cell[1222, 41, 158, 3, 54, "Section",ExpressionUUID->"3b0f5f64-fd7d-4b7d-9281-4b7c9c73d5a2"],
-Cell[1383, 46, 1194, 28, 49, "Text",ExpressionUUID->"d8fb54c8-1da0-4208-b74e-3f8dbdd27abd"],
+Cell[1383, 46, 1194, 28, 66, "Text",ExpressionUUID->"d8fb54c8-1da0-4208-b74e-3f8dbdd27abd"],
 Cell[2580, 76, 7715, 208, 186, "Text",ExpressionUUID->"3a969c02-e2f2-4e94-8dd1-8b80f567be74"],
 Cell[CellGroupData[{
 Cell[10320, 288, 1951, 51, 96, "Input",ExpressionUUID->"4d7f6d68-8ec8-4361-bc2b-a90b3f9c55db"],
@@ -2655,11 +2694,12 @@ Cell[31813, 723, 8370, 223, 224, "Text",ExpressionUUID->"0d4c07ec-8547-48fe-bc66
 Cell[CellGroupData[{
 Cell[40208, 950, 1778, 45, 100, "Input",ExpressionUUID->"e5355616-cfea-4b91-8d2b-8b35059a6c4d"],
 Cell[41989, 997, 94431, 1606, 205, "Output",ExpressionUUID->"2be7c098-6d87-444a-abbb-6d9a88b058fd"]
-}, Open  ]]
+}, Open  ]],
+Cell[136435, 2606, 1561, 37, 70, "Text",ExpressionUUID->"fedaa6ba-e639-4cef-9573-46fcfd022f60"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[136469, 2609, 156, 3, 54, "Section",ExpressionUUID->"3f070b75-5760-46e2-8dfd-1b5d3e237d45"],
-Cell[136628, 2614, 231, 5, 28, "Text",ExpressionUUID->"ac4970ba-4670-4dab-9885-453ea799808e"]
+Cell[138033, 2648, 156, 3, 54, "Section",ExpressionUUID->"3f070b75-5760-46e2-8dfd-1b5d3e237d45"],
+Cell[138192, 2653, 231, 5, 28, "Text",ExpressionUUID->"ac4970ba-4670-4dab-9885-453ea799808e"]
 }, Open  ]]
 }, Open  ]]
 }
