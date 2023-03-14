@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    140256,       2700]
-NotebookOptionsPosition[    138451,       2662]
-NotebookOutlinePosition[    138889,       2679]
-CellTagsIndexPosition[    138846,       2676]
+NotebookDataLength[    149858,       2959]
+NotebookOptionsPosition[    148042,       2921]
+NotebookOutlinePosition[    148487,       2938]
+CellTagsIndexPosition[    148444,       2935]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2651,17 +2651,276 @@ Cell["Problem 2", "Section",
   3.8194771863519216`*^9}},ExpressionUUID->"3f070b75-5760-46e2-8dfd-\
 1b5d3e237d45"],
 
-Cell["\<\
-Restate the problem here and follow up with any computations or explanations.\
-\>", "Text",
- CellChangeTimes->{{3.8194771895995965`*^9, 
-  3.8194771998661075`*^9}},ExpressionUUID->"ac4970ba-4670-4dab-9885-\
+Cell[TextData[{
+ "Show that ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         SubsuperscriptBox["\[Integral]", "0", "1"], 
+         FractionBox[
+          RowBox[{
+            SuperscriptBox[
+             StyleBox["e", "TI"], 
+             StyleBox["x", "TI"]], "-", 
+            SuperscriptBox[
+             StyleBox["e", "TI"], 
+             RowBox[{
+               StyleBox["x", "TI"], 
+               StyleBox["t", "TI"]}]]}], 
+          RowBox[{"1", "-", 
+            StyleBox["t", "TI"]}]], 
+         StyleBox["d", "TI"], 
+         StyleBox["t", "TI"], "\[Tilde]", 
+         SuperscriptBox[
+          StyleBox["e", "TI"], 
+          StyleBox["x", "TI"]], 
+         StyleBox["l", "TI"], 
+         StyleBox["o", "TI"], 
+         StyleBox["g", "TI"], 
+         RowBox[{"(", 
+           StyleBox["x", "TI"], ")"}], "+", 
+         SuperscriptBox[
+          StyleBox["e", "TI"], 
+          StyleBox["x", "TI"]], "\[Gamma]", "+", "...", ",", 
+         StyleBox["x", "TI"], "\[Rule]", "\[Infinity]"}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "\\int_{0}^{1}\\frac{e^x - e^{xt}}{1-t}dt \\sim e^xlog(x) + e^x\\gamma+ \
+..., x  \\to \\infty", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "58f9e554-8449-4fc2-917f-53439b450950"],
+ ".\nAs the hint suggests, we take ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["u", "TI"], "-", 
+         StyleBox["x", "TI"], "-", 
+         StyleBox["x", "TI"], 
+         StyleBox["t", "TI"], "\[DoubleLongRightArrow]", 
+         StyleBox["d", "TI"], 
+         StyleBox["u", "TI"], "\[LongEqual]", "-", 
+         StyleBox["x", "TI"], 
+         StyleBox["d", "TI"], 
+         StyleBox["t", "TI"]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "u - x - xt \\implies du = -xdt", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "8f771a28-f046-427b-b009-2a9a70e7c40b"],
+ ". Using this, our integral turns into:\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"-", 
+         SubsuperscriptBox["\[Integral]", 
+          StyleBox["x", "TI"], "0"], 
+         FractionBox[
+          RowBox[{
+            SuperscriptBox[
+             StyleBox["e", "TI"], 
+             StyleBox["x", "TI"]], "-", 
+            SuperscriptBox[
+             StyleBox["e", "TI"], 
+             RowBox[{
+               StyleBox["x", "TI"], "(", 
+               RowBox[{"1", "-", 
+                 FractionBox[
+                  StyleBox["u", "TI"], 
+                  StyleBox["x", "TI"]]}], ")"}]]}], 
+          RowBox[{"(", 
+            RowBox[{"1", "-", 
+              RowBox[{"(", 
+                RowBox[{"1", "-", 
+                  FractionBox[
+                   StyleBox["u", "TI"], 
+                   StyleBox["x", "TI"]]}], ")"}]}], ")"}]], 
+         FractionBox[
+          RowBox[{
+            StyleBox["d", "TI"], 
+            StyleBox["u", "TI"]}], 
+          StyleBox["x", "TI"]], "\[DoubleLongRightArrow]", "-", 
+         SubsuperscriptBox["\[Integral]", 
+          StyleBox["x", "TI"], "0"], 
+         FractionBox[
+          RowBox[{
+            SuperscriptBox[
+             StyleBox["e", "TI"], 
+             StyleBox["x", "TI"]], "-", 
+            SuperscriptBox[
+             StyleBox["e", "TI"], 
+             RowBox[{
+               StyleBox["x", "TI"], "-", 
+               StyleBox["u", "TI"]}]]}], 
+          StyleBox["u", "TI"]], 
+         StyleBox["d", "TI"], 
+         StyleBox["u", "TI"]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "-\\int_{x}^{0} \\frac{e^x-e^{x(1-\\frac{u}{x})}}{(1-(1-\\frac{u}{x}))} \
+\\frac{du}{x} \\implies -\\int_{x}^{0} \\frac{e^x-e^{x-u}}{u}du", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "8cba6b2f-f491-4c4e-8cef-cfd00a028b4b"],
+ ". Pulling out an ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       SuperscriptBox[
+        StyleBox["e", "TI"], 
+        StyleBox["x", "TI"]], TraditionalForm], "errors" -> {}, "input" -> 
+     "e^x", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "378c7e92-9555-440f-9e91-3545e3fee384"],
+ " and using the trick of ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"1", "\[LongEqual]", 
+         FractionBox[
+          RowBox[{
+            StyleBox["u", "TI"], "+", "1"}], 
+          RowBox[{
+            StyleBox["u", "TI"], "+", "1"}]]}], TraditionalForm], 
+     "errors" -> {}, "input" -> "1 = \\frac{u+1}{u+1}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "f41b030f-b804-49d8-9396-c866ffd3ea17"],
+ " we get:\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"\[DoubleLongRightArrow]", 
+         SuperscriptBox[
+          StyleBox["e", "TI"], 
+          StyleBox["x", "TI"]], 
+         SubsuperscriptBox["\[Integral]", "0", 
+          StyleBox["x", "TI"]], 
+         FractionBox[
+          RowBox[{
+            FractionBox[
+             RowBox[{
+               StyleBox["u", "TI"], "+", "1"}], 
+             RowBox[{
+               StyleBox["u", "TI"], "+", "1"}]], "-", 
+            SuperscriptBox[
+             StyleBox["e", "TI"], 
+             RowBox[{"-", 
+               StyleBox["u", "TI"]}]]}], 
+          StyleBox["u", "TI"]], 
+         StyleBox["d", "TI"], 
+         StyleBox["u", "TI"], "\[LongEqual]", 
+         SuperscriptBox[
+          StyleBox["e", "TI"], 
+          StyleBox["x", "TI"]], 
+         RowBox[{"(", 
+           RowBox[{
+             SubsuperscriptBox["\[Integral]", "0", 
+              StyleBox["x", "TI"]], 
+             RowBox[{"(", 
+               RowBox[{
+                 FractionBox["1", 
+                  RowBox[{
+                    StyleBox["u", "TI"], "+", "1"}]], 
+                 StyleBox["d", "TI"], 
+                 StyleBox["u", "TI"]}], ")"}], "+", 
+             SubsuperscriptBox["\[Integral]", "0", 
+              StyleBox["x", "TI"]], 
+             FractionBox["1", 
+              RowBox[{
+                StyleBox["u", "TI"], "+", "1"}]], "-", 
+             SuperscriptBox[
+              StyleBox["e", "TI"], 
+              RowBox[{"-", 
+                StyleBox["u", "TI"]}]], 
+             FractionBox[
+              RowBox[{
+                StyleBox["d", "TI"], 
+                StyleBox["u", "TI"]}], 
+              StyleBox["u", "TI"]]}], ")"}]}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "\\implies e^x \\int_{0}^{x}\\frac{\\frac{u+1}{u+1} - e^{-u}}{u}du = e^x \
+(\\int_{0}^{x}(\\frac{1}{u+1}du) + \
+\\int_{0}^{x}\\frac{1}{u+1}-e^{-u}\\frac{du}{u})", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "ef310fb1-8979-46c3-a18b-623091180f35"],
+ ". Since we are taking ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    TemplateBox[<|"boxes" -> FormBox[
+        RowBox[{
+          StyleBox["x", "TI"], "\[Rule]", "\[Infinity]"}], TraditionalForm], 
+      "errors" -> {}, "input" -> "x \\to \\infty", "state" -> "Boxes"|>,
+     "TeXAssistantTemplate"], ","}], TraditionalForm]],ExpressionUUID->
+  "836b88ab-5f9a-47d3-a42b-649b0c20a09e"],
+ " we see that the second integral yields precisely ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"\[Gamma]", "."}], TraditionalForm], "errors" -> {}, "input" -> 
+     "\\gamma.", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "0cdd289a-c3d6-4d24-ad0a-974f9a628b02"],
+ " The first integrand evaluates to just ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["l", "TI"], 
+         StyleBox["n", "TI"], 
+         RowBox[{"(", 
+           RowBox[{
+             StyleBox["x", "TI"], "+", "1"}], ")"}]}], TraditionalForm], 
+     "errors" -> {}, "input" -> "ln(x+1)", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "35893fee-7676-4669-998e-f6897dcd44a6"],
+ ", and taking a power series expansion on this term yields:\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         SubsuperscriptBox["\[Integral]", "0", "1"], 
+         FractionBox[
+          RowBox[{
+            SuperscriptBox[
+             StyleBox["e", "TI"], 
+             StyleBox["x", "TI"]], "-", 
+            SuperscriptBox[
+             StyleBox["e", "TI"], 
+             RowBox[{
+               StyleBox["x", "TI"], 
+               StyleBox["t", "TI"]}]]}], 
+          RowBox[{"1", "-", 
+            StyleBox["t", "TI"]}]], 
+         StyleBox["d", "TI"], 
+         StyleBox["t", "TI"], "\[Tilde]", 
+         SuperscriptBox[
+          StyleBox["e", "TI"], 
+          StyleBox["x", "TI"]], 
+         StyleBox["l", "TI"], 
+         StyleBox["o", "TI"], 
+         StyleBox["g", "TI"], 
+         RowBox[{"(", 
+           StyleBox["x", "TI"], ")"}], "+", 
+         SuperscriptBox[
+          StyleBox["e", "TI"], 
+          StyleBox["x", "TI"]], "\[Gamma]", "+", "...", ",", 
+         StyleBox["x", "TI"], "\[Rule]", "\[Infinity]"}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "\\int_{0}^{1}\\frac{e^x - e^{xt}}{1-t}dt \\sim e^xlog(x) + e^x\\gamma+ \
+..., x  \\to \\infty\n", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "4ebcd99f-5204-484e-b6d4-beeb89e4950f"],
+ "\n\n\n"
+}], "Text",
+ CellChangeTimes->{{3.8194771895995965`*^9, 3.8194771998661075`*^9}, {
+  3.8878160997764444`*^9, 3.8878161027039804`*^9}, {3.887816228908113*^9, 
+  3.8878162432701397`*^9}, {3.887816280849778*^9, 3.887816365812025*^9}, {
+  3.887816444142881*^9, 3.8878164445644207`*^9}, {3.8878166395191207`*^9, 
+  3.8878166702114964`*^9}, {3.887816906783057*^9, 
+  3.8878170137688427`*^9}},ExpressionUUID->"ac4970ba-4670-4dab-9885-\
 453ea799808e"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{760.5, 833.25},
-WindowMargins->{{381, Automatic}, {36, Automatic}},
+WindowSize->{760.5, 607.5},
+WindowMargins->{{Automatic, -906.75}, {Automatic, 182.25}},
 Magnification:>0.8 Inherited,
 FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (November 18, 2022)",
 StyleDefinitions->"Default.nb",
@@ -2699,7 +2958,7 @@ Cell[136435, 2606, 1561, 37, 70, "Text",ExpressionUUID->"fedaa6ba-e639-4cef-9573
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[138033, 2648, 156, 3, 54, "Section",ExpressionUUID->"3f070b75-5760-46e2-8dfd-1b5d3e237d45"],
-Cell[138192, 2653, 231, 5, 28, "Text",ExpressionUUID->"ac4970ba-4670-4dab-9885-453ea799808e"]
+Cell[138192, 2653, 9822, 264, 260, "Text",ExpressionUUID->"ac4970ba-4670-4dab-9885-453ea799808e"]
 }, Open  ]]
 }, Open  ]]
 }
