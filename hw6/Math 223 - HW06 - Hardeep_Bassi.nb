@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    149858,       2959]
-NotebookOptionsPosition[    148042,       2921]
-NotebookOutlinePosition[    148487,       2938]
-CellTagsIndexPosition[    148444,       2935]
+NotebookDataLength[    149786,       2957]
+NotebookOptionsPosition[    147977,       2919]
+NotebookOutlinePosition[    148415,       2936]
+CellTagsIndexPosition[    148372,       2933]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -917,12 +917,10 @@ w)}{\\pi}2^{\\frac{-3}{2}}w^{\\frac{-3}{2}}dw", "state" -> "Boxes"|>,
                 SuperscriptBox[
                  StyleBox["x", "TI"], "2"]}], ")"}]}], 
           RowBox[{"\[Pi]", 
-            SqrtBox[
-             SuperscriptBox[
-              StyleBox["x", "TI"], "2"]]}]]}], TraditionalForm], 
-     "errors" -> {}, "input" -> 
-     "S(x) \\sim \\frac{1}{2} - \\frac{cos(\\pi\\frac{1}{2}x^2)}{\\pi \
-\\sqrt{x^2}}", "state" -> "Boxes"|>,
+            StyleBox["x", "TI"]}]]}], TraditionalForm], "errors" -> {}, 
+     "input" -> 
+     "S(x) \\sim \\frac{1}{2} - \\frac{cos(\\pi\\frac{1}{2}x^2)}{\\pi x}", 
+     "state" -> "Boxes"|>,
     "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
   "116a6568-1f41-4ae7-87fd-74619de92a08"],
  " as ",
@@ -2920,7 +2918,7 @@ Cell[TextData[{
 }, Open  ]]
 },
 WindowSize->{760.5, 607.5},
-WindowMargins->{{Automatic, -906.75}, {Automatic, 182.25}},
+WindowMargins->{{Automatic, 420}, {192, Automatic}},
 Magnification:>0.8 Inherited,
 FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (November 18, 2022)",
 StyleDefinitions->"Default.nb",
@@ -2949,16 +2947,16 @@ Cell[CellGroupData[{
 Cell[10320, 288, 1951, 51, 96, "Input",ExpressionUUID->"4d7f6d68-8ec8-4361-bc2b-a90b3f9c55db"],
 Cell[12274, 341, 19524, 379, 205, "Output",ExpressionUUID->"0c95405d-7a4e-4be0-a5ec-228f887bfd64"]
 }, Open  ]],
-Cell[31813, 723, 8370, 223, 224, "Text",ExpressionUUID->"0d4c07ec-8547-48fe-bc66-e4760173d842"],
+Cell[31813, 723, 8305, 221, 221, "Text",ExpressionUUID->"0d4c07ec-8547-48fe-bc66-e4760173d842"],
 Cell[CellGroupData[{
-Cell[40208, 950, 1778, 45, 100, "Input",ExpressionUUID->"e5355616-cfea-4b91-8d2b-8b35059a6c4d"],
-Cell[41989, 997, 94431, 1606, 205, "Output",ExpressionUUID->"2be7c098-6d87-444a-abbb-6d9a88b058fd"]
+Cell[40143, 948, 1778, 45, 100, "Input",ExpressionUUID->"e5355616-cfea-4b91-8d2b-8b35059a6c4d"],
+Cell[41924, 995, 94431, 1606, 205, "Output",ExpressionUUID->"2be7c098-6d87-444a-abbb-6d9a88b058fd"]
 }, Open  ]],
-Cell[136435, 2606, 1561, 37, 70, "Text",ExpressionUUID->"fedaa6ba-e639-4cef-9573-46fcfd022f60"]
+Cell[136370, 2604, 1561, 37, 70, "Text",ExpressionUUID->"fedaa6ba-e639-4cef-9573-46fcfd022f60"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[138033, 2648, 156, 3, 54, "Section",ExpressionUUID->"3f070b75-5760-46e2-8dfd-1b5d3e237d45"],
-Cell[138192, 2653, 9822, 264, 260, "Text",ExpressionUUID->"ac4970ba-4670-4dab-9885-453ea799808e"]
+Cell[137968, 2646, 156, 3, 54, "Section",ExpressionUUID->"3f070b75-5760-46e2-8dfd-1b5d3e237d45"],
+Cell[138127, 2651, 9822, 264, 260, "Text",ExpressionUUID->"ac4970ba-4670-4dab-9885-453ea799808e"]
 }, Open  ]]
 }, Open  ]]
 }
