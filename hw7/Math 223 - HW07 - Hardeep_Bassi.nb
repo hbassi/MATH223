@@ -1,0 +1,121 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3595,        113]
+NotebookOptionsPosition[      2366,         83]
+NotebookOutlinePosition[      2769,         99]
+CellTagsIndexPosition[      2726,         96]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Math 223: Homework 1", "Title",
+ CellChangeTimes->{{3.819477029542458*^9, 
+  3.8194770325147047`*^9}},ExpressionUUID->"197654a4-4d8f-4ad2-acd2-\
+0426bba106a8"],
+
+Cell["<Insert Name>", "Author",
+ CellChangeTimes->{{3.819477041266364*^9, 
+  3.81947704456911*^9}},ExpressionUUID->"47fdc244-5ee2-4b42-93c3-\
+40f677fdf9ef"],
+
+Cell["<Insert Date>", "Affiliation",
+ CellChangeTimes->{{3.8194774638175488`*^9, 
+  3.819477466618027*^9}},ExpressionUUID->"581392a7-3011-4211-898e-\
+5aefcdf8effb"],
+
+Cell[CellGroupData[{
+
+Cell["Problem 1", "Section",
+ CellChangeTimes->{{3.8194770755713477`*^9, 
+  3.8194770765366144`*^9}},ExpressionUUID->"3b0f5f64-fd7d-4b7d-9281-\
+4b7c9c73d5a2"],
+
+Cell["\<\
+Restate the problem here and follow up with any computations or explanations.\
+\>", "Text",
+ CellChangeTimes->{{3.819477124705309*^9, 
+  3.8194771397099257`*^9}},ExpressionUUID->"d8fb54c8-1da0-4208-b74e-\
+3f8dbdd27abd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 2", "Section",
+ CellChangeTimes->{{3.819477185401244*^9, 
+  3.8194771863519216`*^9}},ExpressionUUID->"3f070b75-5760-46e2-8dfd-\
+1b5d3e237d45"],
+
+Cell["\<\
+Restate the problem here and follow up with any computations or explanations.\
+\>", "Text",
+ CellChangeTimes->{{3.8194771895995965`*^9, 
+  3.8194771998661075`*^9}},ExpressionUUID->"ac4970ba-4670-4dab-9885-\
+453ea799808e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 3", "Section",
+ CellChangeTimes->{{3.8194772128885565`*^9, 
+  3.819477213817498*^9}},ExpressionUUID->"53360077-b126-4736-89d5-\
+442e353af9f0"],
+
+Cell["\<\
+Restate the problem here and follow up with any computations or explanations.\
+\>", "Text",
+ CellChangeTimes->{{3.819477217465713*^9, 
+  3.8194772281844006`*^9}},ExpressionUUID->"fd8fe25a-0bda-453f-93cc-\
+c04259d41a4f"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{760, 833},
+WindowMargins->{{161, Automatic}, {Automatic, 72}},
+FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"d75e67b7-b5ca-4e2d-9fea-0daa88af3a50"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 165, 3, 96, "Title",ExpressionUUID->"197654a4-4d8f-4ad2-acd2-0426bba106a8"],
+Cell[748, 27, 156, 3, 31, "Author",ExpressionUUID->"47fdc244-5ee2-4b42-93c3-40f677fdf9ef"],
+Cell[907, 32, 164, 3, 30, "Affiliation",ExpressionUUID->"581392a7-3011-4211-898e-5aefcdf8effb"],
+Cell[CellGroupData[{
+Cell[1096, 39, 158, 3, 67, "Section",ExpressionUUID->"3b0f5f64-fd7d-4b7d-9281-4b7c9c73d5a2"],
+Cell[1257, 44, 229, 5, 34, "Text",ExpressionUUID->"d8fb54c8-1da0-4208-b74e-3f8dbdd27abd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1523, 54, 156, 3, 67, "Section",ExpressionUUID->"3f070b75-5760-46e2-8dfd-1b5d3e237d45"],
+Cell[1682, 59, 231, 5, 34, "Text",ExpressionUUID->"ac4970ba-4670-4dab-9885-453ea799808e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1950, 69, 156, 3, 67, "Section",ExpressionUUID->"53360077-b126-4736-89d5-442e353af9f0"],
+Cell[2109, 74, 229, 5, 34, "Text",ExpressionUUID->"fd8fe25a-0bda-453f-93cc-c04259d41a4f"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
