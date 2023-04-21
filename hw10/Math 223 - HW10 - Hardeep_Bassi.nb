@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     47842,       1300]
-NotebookOptionsPosition[     44666,       1240]
-NotebookOutlinePosition[     45080,       1256]
-CellTagsIndexPosition[     45037,       1253]
+NotebookDataLength[     67715,       1835]
+NotebookOptionsPosition[     63569,       1760]
+NotebookOutlinePosition[     63983,       1776]
+CellTagsIndexPosition[     63940,       1773]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1229,12 +1229,532 @@ Cell["Problem 3", "Section",
   3.819477213817498*^9}},ExpressionUUID->"53360077-b126-4736-89d5-\
 442e353af9f0"],
 
-Cell["\<\
-Restate the problem here and follow up with any computations or explanations.\
-\>", "Text",
- CellChangeTimes->{{3.819477217465713*^9, 
-  3.8194772281844006`*^9}},ExpressionUUID->"fd8fe25a-0bda-453f-93cc-\
-c04259d41a4f"]
+Cell[TextData[{
+ "The function ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    TemplateBox[<|"boxes" -> FormBox[
+        RowBox[{
+          StyleBox["y", "TI"], "(", 
+          RowBox[{
+            StyleBox["x", "TI"], ";", "\[Epsilon]"}], ")"}], TraditionalForm],
+       "errors" -> {}, "input" -> "y(x;\\epsilon)", "state" -> "Boxes"|>,
+     "TeXAssistantTemplate"], " "}], TraditionalForm]],ExpressionUUID->
+  "703a114d-60d6-468b-a627-9824e496992a"],
+ "satisfies ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"\[Epsilon]", 
+         SuperscriptBox[
+          StyleBox["y", "TI"], "\[Prime]\[Prime]"], "+", 
+         RowBox[{"(", 
+           RowBox[{"1", "+", "\[Epsilon]"}], ")"}], 
+         SuperscriptBox[
+          StyleBox["y", "TI"], "\[Prime]"], "+", 
+         StyleBox["y", "TI"], "\[LongEqual]", "0", ",", "0", "\[LessEqual]", 
+         StyleBox["x", "TI"], "\[LessEqual]", "1", ","}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "\\epsilon y'' + (1+\\epsilon)y' + y = 0, 0 \\leq x \\leq 1,", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "2cd2abe5-cfbf-448f-b385-883d70e27d0e"],
+ " and is subject to boundary conditions ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    TemplateBox[<|"boxes" -> FormBox[
+        RowBox[{
+          StyleBox["y", "TI"], 
+          RowBox[{"(", "0", ")"}], "\[LongEqual]", "0"}], TraditionalForm], 
+      "errors" -> {}, "input" -> "y(0) = 0", "state" -> "Boxes"|>,
+     "TeXAssistantTemplate"], " "}], TraditionalForm]],ExpressionUUID->
+  "467886f8-81f7-4ff2-8db0-830fe2af37ed"],
+ "and ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["y", "TI"], 
+         RowBox[{"(", "1", ")"}], "\[LongEqual]", 
+         SuperscriptBox[
+          StyleBox["e", "TI"], "-1"]}], TraditionalForm], "errors" -> {}, 
+     "input" -> "y(1) = e^{-1}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "fad8b474-c1c9-46a9-9095-c8785e1e258d"],
+ ". Find two terms in the outer approximation, applying only the boundary \
+condition at ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "1"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x = 1", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "b983e73a-4201-4ae9-9796-562c47cc6695"],
+ ". Next find two terms in the inner approximation for the boundary layer \
+near ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    TemplateBox[<|"boxes" -> FormBox[
+        RowBox[{
+          StyleBox["x", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+      "errors" -> {}, "input" -> "x = 0", "state" -> "Boxes"|>,
+     "TeXAssistantTemplate"], ","}], TraditionalForm]],ExpressionUUID->
+  "4fbd4270-a592-49b9-9335-9b0a4ef95995"],
+ " which can be assumed to have width ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["O", "TI"], "(", "\[Epsilon]", ")"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "O(\\epsilon)", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "42ea89b1-10e5-4a80-9b39-d17bf705a988"],
+ ", and applying only the boundary condition at ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "x = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "362f1de1-01ec-49d8-90ec-054e341c8618"],
+ ". Finally determine the constants of integration in the inner approximation \
+by matching.\nTo solve for the outer layer, we proceed by letting  ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         SubscriptBox[
+          StyleBox["y", "TI"], 
+          RowBox[{
+            StyleBox["o", "TI"], 
+            StyleBox["u", "TI"], 
+            StyleBox["t", "TI"]}]], "\[Tilde]", 
+         UnderoverscriptBox["\[Sum]", 
+          RowBox[{
+            StyleBox["n", "TI"], "\[LongEqual]", "0"}], "\[Infinity]", 
+          LimitsPositioning -> True], 
+         SubscriptBox[
+          StyleBox["y", "TI"], 
+          StyleBox["n", "TI"]], 
+         SuperscriptBox["\[Epsilon]", 
+          StyleBox["n", "TI"]], ",", "\[Epsilon]", "\[Rule]", 
+         SuperscriptBox["0", "+"]}], TraditionalForm], "errors" -> {}, 
+     "input" -> 
+     "y_{out} \\sim \\sum_{n=0}^{\\infty}y_n\\epsilon^n, \\epsilon \\to 0^+", 
+     "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "0c1a20fa-4e5a-44aa-8ebd-71cb880ec41a"],
+ ". Upon substitution into the perturbed ODE, we see that ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         SubsuperscriptBox[
+          StyleBox["y", "TI"], "0", "\[Prime]"], "+", 
+         SubscriptBox[
+          StyleBox["y", "TI"], "0"], "\[LongEqual]", "0"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "y_0' + y_0 = 0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "352718e4-5c82-4f9b-b499-11e54bd1d749"],
+ ".  This has solution known solution ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    TemplateBox[<|"boxes" -> FormBox[
+        RowBox[{
+          SubscriptBox[
+           StyleBox["y", "TI"], "0"], "\[LongEqual]", 
+          SuperscriptBox[
+           StyleBox["e", "TI"], 
+           RowBox[{"-", 
+             StyleBox["x", "TI"]}]]}], TraditionalForm], "errors" -> {}, 
+      "input" -> "y_0 = e^{-x}", "state" -> "Boxes"|>,
+     "TeXAssistantTemplate"], "."}], TraditionalForm]],ExpressionUUID->
+  "cfe6127f-6eb3-41df-9b64-8e49f481f22f"],
+ " For the higher order solution:\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         SubsuperscriptBox[
+          StyleBox["y", "TI"], "1", "\[Prime]"], "+", 
+         SubscriptBox[
+          StyleBox["y", "TI"], "1"], "\[LongEqual]", "-", 
+         SubsuperscriptBox[
+          StyleBox["y", "TI"], "0", "\[Prime]\[Prime]"], "-", 
+         SubsuperscriptBox[
+          StyleBox["y", "TI"], "0", "\[Prime]"]}], TraditionalForm], 
+     "errors" -> {}, "input" -> "y_1' + y_1 = -y_0''-y_0'", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "2caaa9c7-b7d3-4b64-b4ac-0331c5b1673c"]
+}], "Text",
+ CellChangeTimes->{{3.819477217465713*^9, 3.8194772281844006`*^9}, {
+   3.8910336162200828`*^9, 3.891033754118291*^9}, 3.8910344720010624`*^9, {
+   3.8910351998765326`*^9, 3.89103522246164*^9}, 
+   3.891035389844105*^9},ExpressionUUID->"fd8fe25a-0bda-453f-93cc-\
+c04259d41a4f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"y", "'"}], "[", "x", "]"}], " ", "+", " ", 
+       RowBox[{"y", "[", "x", "]"}]}], " ", "==", " ", "0"}], ",", " ", 
+     RowBox[{
+      RowBox[{"y", "[", "0", "]"}], " ", "==", " ", "0"}]}], "}"}], ",", " ", 
+   RowBox[{"y", "[", "x", "]"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.891035392502772*^9, 3.891035419545743*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"c04e77f3-85cc-438c-a025-607f95051dd2"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"y", "[", "x", "]"}], "\[Rule]", "0"}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.8910354199107695`*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"f009acb3-0224-4d0a-bd0f-4ff7bf81b6c3"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Hence, ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         SubscriptBox[
+          StyleBox["y", "TI"], 
+          RowBox[{
+            StyleBox["o", "TI"], 
+            StyleBox["u", "TI"], 
+            StyleBox["t", "TI"]}]], "\[LongEqual]", 
+         SuperscriptBox[
+          StyleBox["e", "TI"], 
+          RowBox[{"-", 
+            StyleBox["x", "TI"]}]]}], TraditionalForm], "errors" -> {}, 
+     "input" -> "y_{out} = e^{-x}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "bdab68f8-b027-40f1-94dc-173cbe1df643"],
+ ". \n\nTo compute the inner solution, we introduce the stretched variable ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         StyleBox["x", "TI"], "\[LongEqual]", "\[Epsilon]", 
+         StyleBox["X", "TI"]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "x = \\epsilon X", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "1db647f7-99af-4891-b685-c153d15a34e5"],
+ ". We see that: ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         SubsuperscriptBox[
+          StyleBox["Y", "TI"], "0", "\[Prime]\[Prime]"], "\[LongEqual]", "-", 
+         SubsuperscriptBox[
+          StyleBox["Y", "TI"], "0", "\[Prime]"]}], TraditionalForm], 
+     "errors" -> {}, "input" -> "Y_0'' = -Y_0'", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "2529fad9-b58c-403d-b269-bd9d6c07f4ed"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.8910354396689544`*^9, 3.8910354753177133`*^9}, {
+  3.891035660607485*^9, 3.8910356991082125`*^9}, {3.891035993229271*^9, 
+  3.8910359965832376`*^9}},ExpressionUUID->"74e33d7c-c738-4e53-959d-\
+c32455ebab4b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"y", "''"}], "[", "x", "]"}], " ", "+", " ", 
+       RowBox[{
+        RowBox[{"y", "'"}], "[", "x", "]"}]}], " ", "==", " ", "0"}], ",", 
+     " ", 
+     RowBox[{
+      RowBox[{"y", "[", "0", "]"}], " ", "==", " ", "0"}]}], "}"}], ",", " ", 
+   RowBox[{"y", "[", "x", "]"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8910357092547474`*^9, 3.891035741910742*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"54ed1853-a0a2-4741-98b5-f573937ad06a"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"y", "[", "x", "]"}], "\[Rule]", 
+    RowBox[{
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"-", "x"}]], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "1"}], "+", 
+       SuperscriptBox["\[ExponentialE]", "x"]}], ")"}], " ", 
+     TemplateBox[{"1"},
+      "C"]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.891035742611824*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"a5474ab8-b4a4-4184-983c-895f07b65668"]
+}, Open  ]],
+
+Cell[TextData[{
+ "For the higher order solution: ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         SubsuperscriptBox[
+          StyleBox["Y", "TI"], "1", "\[Prime]\[Prime]"], "+", 
+         SubsuperscriptBox[
+          StyleBox["Y", "TI"], "1", "\[Prime]"], "+", 
+         SubsuperscriptBox[
+          StyleBox["Y", "TI"], "0", "\[Prime]"], "\[LongEqual]", "-", 
+         SubscriptBox[
+          StyleBox["Y", "TI"], "0"]}], TraditionalForm], "errors" -> {}, 
+     "input" -> "Y_1'' + Y_1' +Y_0' = -Y_0", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "f240047b-63b3-425c-8ba3-3978d340cd07"]
+}], "Text",
+ CellChangeTimes->{{3.8910357559386635`*^9, 
+  3.8910357632016325`*^9}},ExpressionUUID->"f4307123-0672-423a-b3f8-\
+9b40ee096401"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"y", "''"}], "[", "X", "]"}], "+", 
+       RowBox[{
+        RowBox[{"y", "'"}], "[", "X", "]"}]}], " ", "==", " ", 
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"Exp", "[", 
+         RowBox[{"-", "X"}], "]"}]}], "-", 
+       RowBox[{"(", 
+        RowBox[{"1", "-", 
+         RowBox[{"Exp", "[", 
+          RowBox[{"-", "X"}], "]"}]}], ")"}]}]}], ",", " ", 
+     RowBox[{
+      RowBox[{"y", "[", "0", "]"}], " ", "==", "0"}]}], "}"}], ",", 
+   RowBox[{"y", "[", "X", "]"}], ",", "X"}], "]"}]], "Input",
+ CellChangeTimes->{{3.891035790205697*^9, 3.891035898331688*^9}, {
+  3.8910359706384096`*^9, 3.891035978391695*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"f23daac8-3f8e-4185-ad55-633863586696"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"y", "[", "X", "]"}], "\[Rule]", 
+    RowBox[{
+     RowBox[{"-", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"-", "X"}]]}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["\[ExponentialE]", "X"], " ", "X"}], "+", 
+       TemplateBox[{"1"},
+        "C"], "-", 
+       RowBox[{
+        SuperscriptBox["\[ExponentialE]", "X"], " ", 
+        TemplateBox[{"1"},
+         "C"]}]}], ")"}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.8910358421707554`*^9, 3.8910358985860157`*^9}, 
+   3.8910359786623654`*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"292c7d65-d64e-493d-89d1-3de0d48c462a"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Now, we must perform asymptotic matching:\n",
+ StyleBox[" ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         UnderscriptBox["lim", 
+          RowBox[{
+            StyleBox["X", "TI"], "\[Rule]", "\[Infinity]"}], 
+          LimitsPositioning -> True], 
+         SubscriptBox[
+          StyleBox["y", "TI"], 
+          RowBox[{
+            StyleBox["i", "TI"], 
+            StyleBox["n", "TI"]}]], 
+         RowBox[{"(", "0", ")"}], "\[Tilde]", 
+         UnderscriptBox["lim", 
+          RowBox[{
+            StyleBox["x", "TI"], "\[Rule]", "0"}], LimitsPositioning -> True], 
+         SubscriptBox[
+          StyleBox["y", "TI"], 
+          RowBox[{
+            StyleBox["o", "TI"], 
+            StyleBox["u", "TI"], 
+            StyleBox["t", "TI"]}]], 
+         RowBox[{"(", 
+           StyleBox["x", "TI"], ")"}], "\[DoubleLongRightArrow]", 
+         StyleBox["C", "TI"], 
+         SuperscriptBox[
+          StyleBox["e", "TI"], 
+          RowBox[{"-", 
+            StyleBox["x", "TI"]}]], 
+         RowBox[{"(", 
+           RowBox[{"-1", "+", 
+             SuperscriptBox[
+              StyleBox["e", "TI"], 
+              StyleBox["x", "TI"]]}], ")"}], "\[Tilde]", 
+         SuperscriptBox[
+          StyleBox["e", "TI"], 
+          RowBox[{"-", 
+            StyleBox["x", "TI"]}]], "\[DoubleLongRightArrow]", 
+         StyleBox["C", "TI"], "\[LongEqual]", "1"}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "\\lim_{X \\to\\infty} y_{in}(0) \\sim \\lim_{x\\to 0}y_{out}(x) \
+\\implies Ce^{-x}(-1+e^x) \\sim  e^{-x} \\implies C = 1", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "3fbe059f-5b9e-420a-9771-fb1d8577e75b"],
+ "\n ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         UnderscriptBox["lim", 
+          RowBox[{
+            StyleBox["X", "TI"], "\[Rule]", "\[Infinity]"}], 
+          LimitsPositioning -> True], 
+         SubscriptBox[
+          StyleBox["y", "TI"], 
+          RowBox[{
+            StyleBox["i", "TI"], 
+            StyleBox["n", "TI"]}]], 
+         RowBox[{"(", "0", ")"}], "\[Tilde]", 
+         UnderscriptBox["lim", 
+          RowBox[{
+            StyleBox["x", "TI"], "\[Rule]", "0"}], LimitsPositioning -> True], 
+         SubscriptBox[
+          StyleBox["y", "TI"], 
+          RowBox[{
+            StyleBox["o", "TI"], 
+            StyleBox["u", "TI"], 
+            StyleBox["t", "TI"]}]], 
+         RowBox[{"(", 
+           StyleBox["x", "TI"], ")"}], "\[DoubleLongRightArrow]", 
+         UnderscriptBox["lim", 
+          RowBox[{
+            StyleBox["X", "TI"], "\[Rule]", "\[Infinity]"}], 
+          LimitsPositioning -> True], "\[Epsilon]", 
+         RowBox[{"(", 
+           RowBox[{"-", 
+             StyleBox["X", "TI"], "-", 
+             StyleBox["C", "TI"], 
+             RowBox[{"(", 
+               RowBox[{"1", "-", 
+                 SuperscriptBox[
+                  StyleBox["e", "TI"], 
+                  RowBox[{"-", 
+                    StyleBox["X", "TI"]}]]}], ")"}]}], ")"}], "\[Tilde]", 
+         "0"}], TraditionalForm], "errors" -> {}, "input" -> 
+     "\\lim_{X \\to\\infty} y_{in}(0) \\sim \\lim_{x\\to 0}y_{out}(x) \
+\\implies \\lim_{X \\to\\infty} \\epsilon(-X - C(1-e^{-X})) \\sim 0", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "05f421ba-9581-420e-b8a5-32122b1d3369"],
+ ". For this hold true, we undo the substitution and expand ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       SuperscriptBox[
+        StyleBox["e", "TI"], 
+        FractionBox[
+         RowBox[{"-", 
+           StyleBox["x", "TI"]}], "\[Epsilon]"]], TraditionalForm], 
+     "errors" -> {}, "input" -> "e^{\\frac{-x}{\\epsilon}}", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "c0ea08d7-3312-4317-bfd0-c1bf021bd237"],
+ " in ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       StyleBox["x", "TI"], TraditionalForm], "errors" -> {}, "input" -> "x", 
+     "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "1b2030f2-655a-45b4-99d6-3e367c2a6af1"],
+ " to yield:\n ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         UnderscriptBox["lim", 
+          RowBox[{
+            StyleBox["X", "TI"], "\[Rule]", "\[Infinity]"}], 
+          LimitsPositioning -> True], "\[Epsilon]", 
+         RowBox[{"(", 
+           RowBox[{"-", 
+             FractionBox[
+              StyleBox["x", "TI"], "\[Epsilon]"], "-", 
+             StyleBox["C", "TI"], 
+             RowBox[{"(", 
+               RowBox[{"1", "-", 
+                 FractionBox[
+                  StyleBox["x", "TI"], "\[Epsilon]"]}], ")"}]}], ")"}], 
+         "\[DoubleLongRightArrow]", 
+         StyleBox["C", "TI"], "\[LongEqual]", "1"}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "\\lim_{X\\to\\infty }\\epsilon \
+(-\\frac{x}{\\epsilon}-C(1-\\frac{x}{\\epsilon}))} \\implies C = 1", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "7cdcc756-62ff-4b63-8b60-6af257417de6"],
+ ", which means ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         SubscriptBox[
+          StyleBox["y", "TI"], 
+          RowBox[{
+            StyleBox["o", "TI"], 
+            StyleBox["v", "TI"], 
+            StyleBox["e", "TI"], 
+            StyleBox["r", "TI"], 
+            StyleBox["l", "TI"], 
+            StyleBox["a", "TI"], 
+            StyleBox["p", "TI"]}]], "\[LongEqual]", "1"}], TraditionalForm], 
+     "errors" -> {}, "input" -> "y_{overlap} = 1", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "5cc15831-0ef0-4a18-a1ee-0a28ee7b8513"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.891035915490733*^9, 3.8910359482024975`*^9}, {
+  3.8910360105011435`*^9, 3.891036011982308*^9}, {3.8910360525370526`*^9, 
+  3.891036063487441*^9}, {3.89103611573551*^9, 3.8910361173625145`*^9}, {
+  3.891036360668065*^9, 3.891036420688634*^9}, {3.8910364923272247`*^9, 
+  3.8910365019239607`*^9}},ExpressionUUID->"f550a183-37b0-4599-a78a-\
+76fe895b2b7a"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -1299,7 +1819,22 @@ Cell[36497, 1007, 7716, 214, 205, "Text",ExpressionUUID->"c8ee4024-87b0-48b1-953
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[44250, 1226, 156, 3, 67, "Section",ExpressionUUID->"53360077-b126-4736-89d5-442e353af9f0"],
-Cell[44409, 1231, 229, 5, 35, "Text",ExpressionUUID->"fd8fe25a-0bda-453f-93cc-c04259d41a4f"]
+Cell[44409, 1231, 6710, 169, 252, "Text",ExpressionUUID->"fd8fe25a-0bda-453f-93cc-c04259d41a4f"],
+Cell[CellGroupData[{
+Cell[51144, 1404, 557, 14, 28, "Input",ExpressionUUID->"c04e77f3-85cc-438c-a025-607f95051dd2"],
+Cell[51704, 1420, 255, 6, 32, "Output",ExpressionUUID->"f009acb3-0224-4d0a-bd0f-4ff7bf81b6c3"]
+}, Open  ]],
+Cell[51974, 1429, 1797, 46, 85, "Text",ExpressionUUID->"74e33d7c-c738-4e53-959d-c32455ebab4b"],
+Cell[CellGroupData[{
+Cell[53796, 1479, 590, 16, 28, "Input",ExpressionUUID->"54ed1853-a0a2-4741-98b5-f573937ad06a"],
+Cell[54389, 1497, 502, 15, 35, "Output",ExpressionUUID->"a5474ab8-b4a4-4184-983c-895f07b65668"]
+}, Open  ]],
+Cell[54906, 1515, 815, 20, 37, "Text",ExpressionUUID->"f4307123-0672-423a-b3f8-9b40ee096401"],
+Cell[CellGroupData[{
+Cell[55746, 1539, 845, 24, 28, "Input",ExpressionUUID->"f23daac8-3f8e-4185-ad55-633863586696"],
+Cell[56594, 1565, 702, 21, 35, "Output",ExpressionUUID->"292c7d65-d64e-493d-89d1-3de0d48c462a"]
+}, Open  ]],
+Cell[57311, 1589, 6230, 167, 167, "Text",ExpressionUUID->"f550a183-37b0-4599-a78a-76fe895b2b7a"]
 }, Open  ]]
 }, Open  ]]
 }
